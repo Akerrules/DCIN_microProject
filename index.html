@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Colors Personality Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Landing Page -->
+        <div id="landing-page" class="page active">
+            <h1>Discover Your True Colors</h1>
+            <p>Take our personality test to find out which color best represents you.</p>
+            <button id="start-btn" class="btn">Start Test</button>
+        </div>
+
+        <!-- Questionnaire -->
+        <div id="questionnaire" class="page">
+            <div id="question-container">
+                <div id="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="question-number"></div>
+                <div id="question-text"></div>
+                <div id="options-container"></div>
+                <button id="next-btn" class="btn" disabled>Next</button>
+            </div>
+        </div>
+
+        <!-- Results Page -->
+        <div id="results-page" class="page">
+            <h2>Your True Color is:</h2>
+            <div id="result-color" class="color-box"></div>
+            <p id="result-description"></p>
+            <button id="retake-btn" class="btn">Retake Test</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
